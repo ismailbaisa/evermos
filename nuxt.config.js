@@ -50,5 +50,7 @@ export default {
   // Build Configuration (https://go.n  uxtjs.dev/config-build)
   build: {
     publicPath: 'https://cdn.nuxtjs.org'
-  }
+  },
+
+  buildDir: 'nuxt-dist'
 }
