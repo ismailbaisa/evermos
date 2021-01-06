@@ -195,6 +195,17 @@
         1, 2, 3, 4, 5
       ],
       "zerostars": []
+    },
+    {
+      "id": 18,
+      "name": "Ginger Cookies",
+      "price": "Rp. 40.000",
+      "category": "cookies",
+      "thumbnail": "https://imgur.com/J59fPQa",
+      "stars": [
+        1, 2, 3, 4
+      ],
+      "zerostars": [1]
     }
   ]
 }
