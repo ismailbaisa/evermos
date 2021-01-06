@@ -4,21 +4,21 @@
       <div class="overlay has-fade" :class="hamburger"></div>
       <nav class="flex flex-jc-sb flex-ai-c">
         <div class="header__links hide-for-mobile">
-          <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a><a href="#">Blog</a><a href="#">Careers</a>
+          <a href="#">Home</a><a href="#">About</a>
         </div>
         <a class="header__toggle hide-for-desktop has-fade">
           <span></span>
           <span></span>
           <span></span>
         </a>
-        <img class="header__logo" src="@/assets/images/imacakes.jpg">
+        <img class="header__logo" @click="reset" src="@/assets/images/imacakes.jpg">
         <a href="#" @click="toggling" class="header__toggle hide-for-desktop">
           <span></span>
           <span></span>
           <span></span>
         </a>
         <div class="header__links hide-for-mobile">
-          <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a><a href="#">Blog</a><a href="#">Careers</a>
+          <a href="#">Contact</a><a href="#">Blog</a><a href="#">Careers</a>
         </div>
       </nav>
       <div class="header__menu" :class="menu">
@@ -29,11 +29,10 @@
         <a href="">Careers</a>
       </div>
     </header>
-
     <main>
-      <card v-for="cake in cakes" :key="cake.id">
+      <card v-for="cake in cakes" v-if="!category ? true : cake.category == category" :key="cake.id">
         <nuxt-link :to="`/cakes/${cake.id}`">
-          <img class="menu-image" src="https://i.imgur.com/mMv8grH.jpg">
+          <img class="menu-image" :src="cake.thumbnail">
           <section class="menu-section">
             <h3>{{cake.name}}</h3>
             <h3>{{cake.price}}</h3>
@@ -64,6 +63,8 @@
   export default {
     data() {
       return {
+        category: false,
+
         toggle: false,
         hamburger: "",
         open: "",
@@ -76,11 +77,12 @@
         first: "Dessert",
         second: "Savory",
         third: "Cookies"
-
-
       }
     },
     methods: {
+      reset() {
+        this.category = false;
+      },
       next() {
         this.fadeone = "fade-in"
         this.fadetwo = "fade-in"
@@ -107,6 +109,7 @@
           this.second_style = "background: seashell"
           this.third_style = "background: pink"
         }
+        this.category = this.second.toLowerCase()
       },
       prev() {
         this.fadeone = "fade-in"
@@ -134,6 +137,8 @@
           this.second_style = "background: pink"
           this.third_style = "background: seashell"
         }
+        this.category = this.second.toLowerCase()
+
       },
       toggling() {
         if (this.toggle == false) {
@@ -152,5 +157,6 @@
     computed: mapGetters({
       cakes: "dataCakes"
     }),
+
   }
 </script>
