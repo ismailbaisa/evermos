@@ -1,0 +1,52 @@
+.header {
+  &.open {
+
+    .header__toggle {
+      >span:first-child {
+        transform: rotate(45deg);
+      }
+
+      >span:nth-child(2) {
+        opacity: 0;
+      }
+
+      >span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    height: 10vh;
+    width: 100vw;
+    background: #fff;
+    font-size: 2rem;
+    box-shadow: $base-shadow;
+  }
+
+  &__logo {
+    height: 100%;
+  }
+
+  &__toggle {
+    // Mobile Menu Toggle
+
+    >span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: $darkBlue;
+      transition: all 300ms ease-in-out;
+      transform-origin: 3px 1px;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+
+}

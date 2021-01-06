@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "SNOWBREAK";
+  src: local("SNOWBREAK"),
+    url('~assets/fonts/SNOWBREAK.ttf') format("truetype");
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: "SNOWBREAK";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+  // overflow-x: hidden;
+}
+
+
+
+
+
+main {
+  margin-top: 10vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  box-shadow: $base-shadow;
+}
+
+// Flexbox
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+  
+  &-jc-c {
+    justify-content: center;
+  }
+  
+  &-ai-c {
+    align-items: center;
+  }
+}

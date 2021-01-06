@@ -1,73 +1,50 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        imacakes
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
+  <div>
+    <header class="header">
+      <nav class="flex flex-jc-c flex-ai-c">
+      <img class="header__logo" src="@/assets/images/imacakes.jpg">
+       <a href="#" class="header__toggle hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
         </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+      </nav>
+    </header>
+    <!-- <main>
+      <card v-for="cake in cakes" :key="cake.id"><img class="menu-image" :src="cake.thumbnail">
+        <section class="menu-section">
+          <h3>{{cake.name}}</h3>
+          <h3>{{cake.price}}</h3>
+          <div class="ratings">
+            <img v-for="star in cake.stars" :key="star" class="stars" src="@/assets/images/star.svg">
+            <img v-for="star in cake.zerostars" class="stars" :key="star" src="@/assets/images/zero-star.svg">
+          </div>
+        </section>
+      </card>
+    </main>
+    <footer>
+      You can find us on these platforms!
+      <section class="footer-section">
+        <img class="platforms" src="@/assets/images/evermos.png">
+        <img class="platforms" src="@/assets/images/instagram.svg">
+        <img class="platforms" src="@/assets/images/facebook.svg">
+        <img class="platforms" src="@/assets/images/grab.svg">
+      </section>
+    </footer> -->
   </div>
 </template>
 
 <script>
-export default {}
+  export default {
+    data() {
+      return {
+       
+      }
+    }
+  }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+<style lang="scss" scoped>
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
