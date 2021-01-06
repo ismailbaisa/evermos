@@ -2,16 +2,16 @@
   <div>
     <header class="header">
       <nav class="flex flex-jc-c flex-ai-c">
-      <img class="header__logo" src="@/assets/images/imacakes.jpg">
-       <a href="#" class="header__toggle hide-for-desktop">
+        <img class="header__logo" src="@/assets/images/imacakes.jpg">
+        <a href="#" class="header__toggle hide-for-desktop">
           <span></span>
           <span></span>
           <span></span>
         </a>
       </nav>
     </header>
-    <!-- <main>
-      <card v-for="cake in cakes" :key="cake.id"><img class="menu-image" :src="cake.thumbnail">
+    <main>
+      <card v-for="cake in datas" :key="cake.id"><img class="menu-image" :src="cake.thumbnail">
         <section class="menu-section">
           <h3>{{cake.name}}</h3>
           <h3>{{cake.price}}</h3>
@@ -22,7 +22,7 @@
         </section>
       </card>
     </main>
-    <footer>
+    <!-- <footer>
       You can find us on these platforms!
       <section class="footer-section">
         <img class="platforms" src="@/assets/images/evermos.png">
@@ -35,12 +35,19 @@
 </template>
 
 <script>
+  import {
+    mapGetters,
+    mapActions
+  } from "vuex";
   export default {
     data() {
       return {
-       
+
       }
-    }
+    },
+    computed: mapGetters({
+      datas: "dataCakes"
+    }),
   }
 </script>
 

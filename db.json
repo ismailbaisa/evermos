@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Bolu Milo",
       "price": "Rp. 45.000",
-      "thumbnail": "require('~/assets/images/milo.jpg')",
+      "thumbnail":  "@/assets/images/ngeju.jpg",
       "stars": [
         1, 2, 3, 4
       ],
@@ -15,7 +15,7 @@
       "id": 1,
       "name": "Ngeju Milo",
       "price": "Rp. 45.000",
-      "thumbnail": "require('~/assets/images/milo.jpg')",
+      "thumbnail": "@/assets/images/milo.jpg",
       "stars": [
         1, 2, 3, 4
       ],
