@@ -12,6 +12,10 @@ export default {
     ]
   },
 
+  generate: {
+    dir: 'public'
+  },
+
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     "~assets/scss/style.scss"],
