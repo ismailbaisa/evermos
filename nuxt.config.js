@@ -16,6 +16,11 @@ export default {
     dir: 'public'
   },
 
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0' // default: localhost
+  },
+
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     "~assets/scss/style.scss"],
@@ -42,7 +47,7 @@ export default {
     baseURL: 'https://my-json-server.typicode.com/ismailbaisa/evermos/',
   },
 
-  // Build Configuration (https://go.nuxtjs.dev/config-build)
+  // Build Configuration (https://go.n  uxtjs.dev/config-build)
   build: {
   }
 }
