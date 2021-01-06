@@ -2,14 +2,14 @@ import mutations from './mutations'
 import getters from './getters'
 import actions from './actions'
 
-const state = {
-    dataCakes: null,
-};
+export const state = () => ({
+  dataCakes: null
+})
 
 
 export default {
-    state,
-    mutations,
-    actions,
-    getters
+  state,
+  mutations,
+  actions,
+  getters
 }

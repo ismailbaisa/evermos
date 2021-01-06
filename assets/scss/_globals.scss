@@ -23,12 +23,7 @@ body {
   // overflow-x: hidden;
 }
 
-
-
-
-
 main {
-  margin-top: 10vh;
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -39,6 +34,20 @@ main {
   gap: 1rem;
 }
 
+@include breakpoint-up(large) {
+  font-size: $font-med;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+a,
+a:visited,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
 
 
 // Flexbox
@@ -48,12 +57,27 @@ main {
   &-jc-sb {
     justify-content: space-between;
   }
-  
+
   &-jc-c {
     justify-content: center;
   }
-  
+
   &-ai-c {
     align-items: center;
+  }
+}
+
+
+
+// Visibility
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
   }
 }

@@ -3,7 +3,19 @@
       "id": 1,
       "name": "Bolu Milo",
       "price": "Rp. 45.000",
-      "thumbnail":  "/_nuxt/assets/images/ngeju.jpg",
+      "category": "dessert",
+      "thumbnail": "https://i.imgur.com/04jA7zS.jpg",
+      "stars": [
+        1, 2, 3, 4, 5
+      ],
+      "zerostars": []
+    },
+    {
+      "id": 2,
+      "name": "Bolu Classic",
+      "price": "Rp. 45.000",
+      "category": "dessert",
+      "thumbnail": "https://i.imgur.com/Ovutbzu.jpg",
       "stars": [
         1, 2, 3, 4
       ],
@@ -12,16 +24,177 @@
       ]
     },
     {
-      "id": 1,
-      "name": "Ngeju Milo",
+      "id": 3,
+      "name": "Roll Klepon",
       "price": "Rp. 45.000",
-      "thumbnail": "/_nuxt/assets/images/milo.jpg",
+      "category": "dessert",
+      "thumbnail": "https://i.imgur.com/7PuxCP3.jpg",
+      "stars": [
+        1, 2, 3, 4, 5
+      ],
+      "zerostars": []
+    },
+    {
+      "id": 4,
+      "name": "Roll Keju",
+      "price": "Rp. 40.000",
+      "category": "dessert",
+      "thumbnail": "https://i.imgur.com/079gUDg.jpg",
+      "stars": [
+        1, 2, 3, 4, 5
+      ],
+      "zerostars": []
+    },
+    {
+      "id": 5,
+      "name": "Fruit Box",
+      "price": "Rp. 60.000",
+      "category": "dessert",
+      "thumbnail": "https://i.imgur.com/2eOKOgq.jpg",
+      "stars": [
+        1, 2, 3, 4, 5
+      ],
+      "zerostars": []
+    },
+    {
+      "id": 6,
+      "name": "Lemon Box",
+      "price": "Rp. 60.000",
+      "category": "dessert",
+      "thumbnail": "https://i.imgur.com/9706QCW.jpg",
+      "stars": [
+        1, 2, 3, 4, 5
+      ],
+      "zerostars": []
+    },
+    {
+      "id": 7,
+      "name": "Forest Box",
+      "price": "Rp. 60.000",
+      "category": "dessert",
+      "thumbnail": "https://i.imgur.com/TsRSaU7.jpg",
+      "stars": [
+        1, 2, 3, 4, 5
+      ],
+      "zerostars": []
+    },
+    {
+      "id": 8,
+      "name": "Strudle Kebab",
+      "price": "Rp. 40.000",
+      "category": "savory",
+      "thumbnail": "https://i.imgur.com/RjkCXBo.jpg",
       "stars": [
         1, 2, 3, 4
       ],
       "zerostars": [
         1
       ]
+    },
+    {
+      "id": 9,
+      "name": "Abon Tart",
+      "price": "Rp. 40.000",
+      "category": "savory",
+      "thumbnail": "https://i.imgur.com/rs2JCfg.jpg",
+      "stars": [
+        1, 2, 3, 4
+      ],
+      "zerostars": [
+        1
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Pizza Bread",
+      "price": "Rp. 40.000",
+      "category": "savory",
+      "thumbnail": "https://i.imgur.com/0qyRBb1.jpg",
+      "stars": [
+        1, 2, 3, 4
+      ],
+      "zerostars": [
+        1
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Roll Abon",
+      "price": "Rp. 40.000",
+      "category": "savory",
+      "thumbnail": "https://i.imgur.com/jTO1cvV.jpg",
+      "stars": [
+        1, 2, 3, 4
+      ],
+      "zerostars": [
+        1
+      ]
+    },
+    {
+      "id": 12,
+      "name": "4 Soft Cookies",
+      "price": "Rp. 60.000",
+      "category": "cookies",
+      "thumbnail": "https://i.imgur.com/sr1XgBi.jpg",
+      "stars": [
+        1, 2, 3, 4, 5
+      ],
+      "zerostars": []
+    },
+    {
+      "id": 13,
+      "name": "Red Velvet SC",
+      "price": "Rp. 15.000",
+      "category": "cookies",
+      "thumbnail": "https://i.imgur.com/mMuPCYq.jpg",
+      "stars": [
+        1, 2, 3, 4, 5
+      ],
+      "zerostars": []
+    },
+    {
+      "id": 14,
+      "name": "Lebaran Set 1",
+      "price": "Rp. 80.000",
+      "category": "cookies",
+      "thumbnail": "https://i.imgur.com/CVTncGG.jpg",
+      "stars": [
+        1, 2, 3, 4, 5
+      ],
+      "zerostars": []
+    },
+    {
+      "id": 15,
+      "name": "Lebaran Set 2",
+      "price": "Rp. 60.000",
+      "category": "cookies",
+      "thumbnail": "https://i.imgur.com/LcNTTSi.jpg",
+      "stars": [
+        1, 2, 3, 4, 5
+      ],
+      "zerostars": []
+    },
+    {
+      "id": 16,
+      "name": "Birthday Cookies",
+      "price": "Rp. 60.000",
+      "category": "cookies",
+      "thumbnail": "https://i.imgur.com/vhRo41s.jpg",
+      "stars": [
+        1, 2, 3, 4, 5
+      ],
+      "zerostars": []
+    },
+    {
+      "id": 17,
+      "name": "Lebaran Set 3",
+      "price": "Rp. 60.000",
+      "category": "cookies",
+      "thumbnail": "https://i.imgur.com/ql5TiJ2.jpg",
+      "stars": [
+        1, 2, 3, 4, 5
+      ],
+      "zerostars": []
     }
   ]
 }

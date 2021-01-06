@@ -1,0 +1,48 @@
+.slider {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  gap: .75rem;
+}
+
+.slider-card {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: $base-shadow;
+  font-size: 3vw;
+  border-radius: 1px;
+  transition: all 500ms;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+  }
+}
+
+.first-slider {
+    width: 20%; 
+    height:5vw; 
+}
+
+.second-slider {
+    width: 50%; 
+    height:7vw; 
+}
+
+.third-slider {
+    width: 20%; 
+    height:5vw; 
+}
